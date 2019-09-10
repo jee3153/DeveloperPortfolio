@@ -1,0 +1,15 @@
+/* .absolute-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%;);
+} */
+
+.block-centering {
+  display: block;
+  margin: 0 auto;
+}
+
+.inline-centering {
+  text-align: center;
+}

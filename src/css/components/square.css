@@ -1,0 +1,26 @@
+.square {
+  position: absolute;
+  border: 1px solid $mainBlack;
+  &--daily-weather {
+    width: 100px;
+    height: 60px;
+  }
+  &--suggestion {
+    width: 110px;
+    height: 60px;
+  }
+  &--warning {
+    width: 100px;
+    height: 50px;
+  }
+
+  &--hr-wk-weather {
+    width: 436px;
+    height: 126px;
+  }
+
+  &--background-change {
+    width: 180px;
+    height: 340px;
+  }
+}

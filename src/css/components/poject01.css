@@ -1,0 +1,88 @@
+.project01 {
+  top: 100%;
+  left: 0;
+
+  min-width: 100vw;
+  min-height: 100vh;
+  /* width: calc(100vw + 10px); */
+  font-family: 'Marske';
+
+  background-color: $mainBlack;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    display: inline-block;
+    opacity: 1;
+    /* opacity: 0; */
+    /* transform: translateY(-120%); */
+  }
+  &__text-dot {
+    transition: all 0.1s ease-out 0.3s;
+  }
+  &__text-zero {
+    transition: all 0.1s ease-out 0.4s;
+  }
+  &__text-one {
+    transition: all 0.1s ease-out 0.5s;
+  }
+  &__text-dot.visible,
+  &__text-zero.visible,
+  &__text-one.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  &__text-01 {
+    position: absolute;
+    z-index: 3;
+    display: inline-block;
+    font-size: 14rem;
+    font-style: normal;
+
+    /* opacity: 0;
+    transition: all 0.5s ease-in 0.3s;
+    transform: translateY(-100%); */
+  }
+
+  &__text-project {
+    position: absolute;
+    z-index: 4;
+
+    font-size: 1.2rem;
+    color: $primaryGreen;
+    transform: translate(-7%, 139%) scale(1) rotate(-45deg);
+    /* transform: translate(-10%, 52%) scale(1) rotate(-45deg); */
+    opacity: 1;
+    @mixin atSmall {
+      transform: translate(-7%, 139%) scale(1) rotate(-45deg);
+    }
+    /* transform: translateY(94%) rotate(-45deg) scale(1.5);
+    transition: all 0.5s ease-in-out 0.6s; */
+
+    /* opacity: 0; */
+  }
+  &__text-project.visible {
+    opacity: 1;
+    transform: translateY(94%) rotate(-45deg) scale(1);
+  }
+
+  &__line {
+    position: absolute;
+    z-index: 2;
+
+    opacity: 1;
+    left: 50%;
+    /* reveal function */
+    /* opacity: 0;
+    left: -15%;
+    transition: opacity 0.3s ease-out, left 0.2s ease-in-out; */
+  }
+
+  &__line.visible {
+    opacity: 1;
+    left: 50%;
+  }
+}

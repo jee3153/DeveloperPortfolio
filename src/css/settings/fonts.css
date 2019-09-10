@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Marske';
+  src: url('../fonts/marske-webfont.woff2') format('woff2'), url('../fonts/marske-webfont.woff') format('woff');
+  font-style: normal;
+}

@@ -1,0 +1,39 @@
+.line {
+  &--vertical {
+    border-left: 1px solid #fff;
+    height: 80px;
+  }
+  &--vertical-black {
+    border-left: 1px solid $mainBlack;
+    height: 80px;
+  }
+
+  &--vertical-short {
+    position: absolute;
+    border-left: 1px solid $mainBlack;
+    height: 80px;
+  }
+
+  &--vertical-Xlong {
+    position: absolute;
+    border-left: 1px solid $mainBlack;
+    height: 400px;
+  }
+  &--vertical-XXlong {
+    position: absolute;
+    border-left: 1px solid $mainBlack;
+    height: 500px;
+  }
+  &--horizontal-long {
+    border-left: 1px solid #fff;
+    height: 300px;
+    transform: rotate(90deg);
+  }
+
+  &--horizontal-short {
+    position: absolute;
+    border-left: 1px solid $mainBlack;
+    height: 50px;
+    transform: rotate(90deg);
+  }
+}

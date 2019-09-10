@@ -1,0 +1,119 @@
+.landing {
+  font-family: 'Marske';
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 700px;
+  &__container {
+    position: relative;
+  }
+
+  &__background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: $mainBlack url('/src/images/glitch.gif') no-repeat center center fixed;
+    background-size: cover;
+    @mixin atLarge {
+      background: $mainBlack url('/src/images/glitch.gif') center center fixed;
+      background-size: auto;
+    }
+    /* background: $mainBlack url('/src/images/glitch.gif') center no-repeat cover; */
+  }
+  &__underneath {
+    position: absolute;
+    z-index: -50;
+    width: 100vw;
+    height: 100vh;
+    background-color: $mainBlack;
+  }
+
+  /* &__fullscreen-video {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $mainBlack;
+    position: absolute;
+    z-index: 1;
+
+    & iframe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      min-width: 100%;
+      min-height: 100%;
+
+      visibility: hidden;
+      opacity: 0.5;
+
+      @mixin atSmall {
+        visibility: visible;
+        height: 56.25vw;
+        width: 177.77777778vh;
+      }
+    }
+  } */
+
+  &__contents {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    position: absolute;
+  }
+
+  &__skillset {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    @mixin atSmall {
+      display: block;
+    }
+  }
+
+  &__intro-text {
+    letter-spacing: 1.5px;
+    width: 80%;
+    height: auto;
+    font-size: 1.2rem;
+    margin: 2rem auto 0;
+    @mixin atSmall {
+      /* font-size: 1.5rem; */
+    }
+    @mixin atTablet {
+      width: 60%;
+      /* font-size: 2rem; */
+    }
+    @mixin atMedium {
+      /* font-size: 2.3rem; */
+    }
+  }
+
+  &__scroll-text {
+    font-family: 'Roboto mono', monospace;
+    font-weight: 100;
+    font-size: 16px;
+
+    animation: flicker 2s infinite;
+    position: absolute;
+    width: 100%;
+    top: 83%;
+    left: 69%;
+    transform: translateX(-50%);
+    @mixin atSmall {
+      left: 76%;
+    }
+    @mixin atTablet {
+      top: 95%;
+      left: 104%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.icon {
+  color: #fff;
+
+  @mixin atSmall {
+    margin-right: 2rem;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--raw {
+    margin-right: 0;
+  }
+}

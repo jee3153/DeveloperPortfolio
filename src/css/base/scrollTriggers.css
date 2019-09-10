@@ -1,0 +1,64 @@
+.trigger {
+  &--blackout {
+    position: relative;
+  }
+  &--animation,
+  &--appear,
+  &--text1,
+  &--text2 {
+    position: absolute;
+  }
+
+  &--animation {
+    top: 60%;
+  }
+  &--appear {
+    top: 330%;
+    @mixin atSmall {
+      top: 300%;
+    }
+    @mixin atTablet {
+      top: 320%;
+    }
+    @mixin atLarge {
+      top: 300%;
+    }
+    @mixin atXLarge {
+      top: 260%;
+    }
+  }
+  &--text1 {
+    top: 142%;
+  }
+  &--text2 {
+    top: 240%;
+    @mixin atSmall {
+      top: 260%;
+    }
+    @mixin atLarge {
+      top: 220%;
+    }
+    @mixin atXLarge {
+      top: 220%;
+    }
+  }
+  &--contact {
+    top: 473%;
+    @mixin atSmall {
+      top: 449%;
+    }
+    @mixin atTablet {
+      top: 510%;
+    }
+    @mixin atMedium {
+      top: 498%;
+    }
+
+    @mixin atLarge {
+      top: 405%;
+    }
+    @mixin atXLarge {
+      top: 388%;
+    }
+  }
+}

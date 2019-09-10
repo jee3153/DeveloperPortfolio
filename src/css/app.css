@@ -1,0 +1,17 @@
+@import 'settings/fonts.css';
+@import 'settings/colors.css';
+@import 'settings/variables.css';
+@import 'settings/mixins.css';
+@import 'base/scrollTriggers.css';
+@import 'base/alignment.css';
+@import 'base/link.css';
+@import 'base/generic.css';
+@import 'components/animation.css';
+@import 'components/square.css';
+@import 'components/lines.css';
+@import 'components/icons.css';
+@import 'components/logo.css';
+@import 'components/landing.css';
+@import 'components/poject01.css';
+@import 'components/prj01-description.css';
+@import 'components/contact.css';

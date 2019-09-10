@@ -1,0 +1,16 @@
+.logo {
+  width: 60px;
+  height: auto;
+
+  &--toTop {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--bigger {
+    width: 80px;
+  }
+}

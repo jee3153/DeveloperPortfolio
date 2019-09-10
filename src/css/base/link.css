@@ -1,0 +1,31 @@
+.link {
+  &--project {
+    border: 1px solid $mainBlack;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    color: #fff;
+    background: $mainBlack;
+
+    transition: all 0.2s linear;
+    @mixin atSmall {
+      font-size: 23px;
+    }
+  }
+  &--project:hover {
+    color: $mainBlack;
+    background: #fff;
+  }
+  &--onImg {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+  }
+  &--onImg:hover {
+    opacity: 0.5;
+  }
+  &--contact {
+    margin-right: 1rem;
+  }
+  &--contact:hover {
+    text-decoration: line-through;
+  }
+}

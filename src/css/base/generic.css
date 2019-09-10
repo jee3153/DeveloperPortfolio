@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  @mixin atSmall {
+    font-size: 18px;
+  }
+  @mixin atTablet {
+    font-size: 25px;
+  }
+  @mixin atLarge {
+    font-size: 30px;
+  }
+}
+html,
+body,
+main {
+  min-width: 100vw;
+}
+body {
+  overflow-x: hidden;
+  color: #fff;
+  font-family: 'Roboto mono', sans-serif;
+  background-color: $mainBlack;
+
+  /* background-image: url('/src/images/grained-bg.jpg'); */
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
