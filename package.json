@@ -2,7 +2,7 @@
   "name": "portfolioweb",
   "version": "1.0.0",
   "license": "MIT",
-  "homepage": "https://github.com/jee3153/DeveloperPortfolio",
+  "homepage": "https://jee3153.github.io/DeveloperPortfolio/",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
