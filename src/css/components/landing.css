@@ -14,7 +14,7 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: $mainBlack url('/src/glitch.gif') no-repeat center center fixed;
+    background: $mainBlack url('/dist/src/images/glitch.gif') no-repeat center center fixed;
     background-size: cover;
     @mixin atLarge {
       background: $mainBlack
