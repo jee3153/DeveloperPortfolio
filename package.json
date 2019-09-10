@@ -2,6 +2,7 @@
   "name": "portfolioweb",
   "version": "1.0.0",
   "license": "MIT",
+  "homepage": "https://github.com/jee3153/DeveloperPortfolio",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -34,9 +35,11 @@
   "scripts": {
     "watch": "webpack -d --watch --config ./webpack.config.js --display-error-details",
     "start": "webpack-dev-server -d  --open",
-    "build": "webpack -p --config ./webpack.config.js --display-error-details"
+    "build": "webpack -p --config ./webpack.config.js --display-error-details",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "baffle": "^0.3.6"
+    "baffle": "^0.3.6",
+    "gh-pages": "^2.1.1"
   }
 }
