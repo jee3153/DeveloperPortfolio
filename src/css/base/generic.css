@@ -19,9 +19,10 @@ html,
 body,
 main {
   min-width: 100vw;
+  width: 100%;
 }
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   color: #fff;
   font-family: 'Roboto mono', sans-serif;
   background-color: $mainBlack;

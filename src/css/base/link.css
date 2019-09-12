@@ -2,7 +2,7 @@
   &--project {
     border: 1px solid $mainBlack;
     padding: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 0.7rem;
     color: #fff;
     background: $mainBlack;
 
@@ -24,6 +24,9 @@
   }
   &--contact {
     margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &--contact:hover {
     text-decoration: line-through;

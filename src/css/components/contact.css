@@ -58,7 +58,7 @@
     /* transform: translateY(0); */
     /* top: 0;
     left: 0; */
-    font-size: 14px;
+    font-size: 12px;
   }
   &__skillset {
     display: grid;
@@ -70,7 +70,7 @@
     top: 90%;
 
     &__name {
-      font-size: 10px;
+      font-size: 8px;
     }
     &__name1 {
       grid-column: 1/2;

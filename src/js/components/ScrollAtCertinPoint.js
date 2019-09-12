@@ -18,13 +18,13 @@ class ScrollAtCertainPoint {
   }
 
 
-  createWaypoints() {
+  // createWaypoints() {
 
-    window.addEventListener('scroll', () => {
-      let scrollValue = window.pageYOffset
-      console.log(scrollValue);
-    })
-  }
+  //   window.addEventListener('scroll', () => {
+  //     let scrollValue = window.pageYOffset
+  //     console.log(scrollValue);
+  //   })
+  // }
 
   scrollAppear() {
     const tl = new TimelineMax({ onUpdate: updatePercentage })
@@ -32,9 +32,8 @@ class ScrollAtCertainPoint {
 
     if (mq.matches) {
       // at least 1200px
-      tl.from('.project01__description__image-desktop', .3, { x: -500, opacity: 0, ease: Power4.easeInOut }, '=-1');
-      tl.from('.project01__description__image-mobile-clear', .2, { x: -500, opacity: 0, ease: Power4.easeInOut });
-      tl.from('.project01__description__image-mobile-rain', .2, { x: -500, opacity: 0, ease: Power4.easeInOut });
+      tl.from('.project01__description__links', 1, { opacity: 0, y: 100 });
+      tl.from('.project01__description__images', 1, { y: -100, opacity: 0, ease: Power4.easeInOut }, '=-1');
 
       tl.from('.project01__description--squarebox1', .3, { x: -800, opacity: 0 });
       tl.from('.project01__description--bar1', .3, { x: -900, opacity: 0 });
@@ -56,22 +55,27 @@ class ScrollAtCertainPoint {
       })
         .setPin('.trigger--appear')
         .setTween(tl)
-        // .addIndicators({ name: 'appear' })
+        .addIndicators({ name: 'appear' })
         .addTo(this.controller);
 
     } else {
       // less than 1200px
-      tl.from('.project01__description__image-desktop', .3, { opacity: 0, ease: Power4.easeInOut }, '=-1');
-      tl.from('.project01__description__image-mobile-clear', .2, { opacity: 0, ease: Power4.easeInOut });
-      tl.from('.project01__description__image-mobile-rain', .2, { opacity: 0, ease: Power4.easeInOut });
+      tl.from('.project01__description__links', 1, { opacity: 0, y: 100 });
+      tl.from('.project01__description__images', 2, { opacity: 0, ease: Power4.easeInOut }, '=-1');
 
-      tl.from('.project01__description--descriptive', .5, { opacity: 0, ease: Power4.easeInOut });
+      tl.from('.project01__description--squarebox1', .3, { x: -800, opacity: 0 });
+      tl.from('.project01__description--bar1', .3, { x: -900, opacity: 0 });
+      tl.from('.project01__description--squarebox2', .1, { x: -800, opacity: 0 });
+      tl.from('.project01__description--bar2', .3, { x: -900, opacity: 0 });
+      tl.from('.project01__description--squarebox3', .1, { y: -1400, opacity: 0 });
+      tl.from('.project01__description--bar3', .3, { y: -1400, opacity: 0 });
+      tl.from('.project01__description--squarebox4', .1, { y: -1700, opacity: 0 });
+      tl.from('.project01__description--bar4', .3, { y: -1600, opacity: 0 });
+      tl.from('.project01__description--squarebox5', .1, { y: 500, opacity: 0 });
+      tl.from('.project01__description--bar5', .3, { y: 500, opacity: 0 });
 
-      tl.from('.project01__description__pair1', .3, { opacity: 0, ease: Power4.easeInOut });
-      tl.from('.project01__description__pair4', .3, { opacity: 0, ease: Power4.easeInOut });
-      tl.from('.project01__description__pair2', .3, { opacity: 0, ease: Power4.easeInOut });
-      tl.from('.project01__description__pair3', .3, { opacity: 0, ease: Power4.easeInOut });
-      tl.from('.project01__description__pair5', .3, { opacity: 0, ease: Power4.easeInOut });
+      tl.from('.project01__description--descriptive', .5, { opacity: 0 });
+
 
       const scene = new ScrollMagic.Scene({
         triggerElement: '.trigger--appear',
@@ -80,7 +84,7 @@ class ScrollAtCertainPoint {
       })
         .setPin('.trigger--appear')
         .setTween(tl)
-        // .addIndicators({ name: 'appear' })
+        .addIndicators({ name: 'appear' })
         .addTo(this.controller);
     }
 
@@ -141,8 +145,7 @@ class ScrollAtCertainPoint {
     tl.from('.project01__description__showcase', 2, { x: -500, opacity: 0 });
     tl.from('.project01__description__explanation', 2, { opacity: 0 });
 
-    tl2.from('.project01__description__story', .5, { opacity: 0 });
-    tl2.from('.project01__description__links', .5, { opacity: 0, scale: 2 });
+    tl2.from('.project01__description__story', .2, { opacity: 0 });
 
     const scene1 = new ScrollMagic.Scene({
       triggerElement: '.trigger--text1',
@@ -150,7 +153,7 @@ class ScrollAtCertainPoint {
       duration: '100%'
     })
       .setTween(tl)
-      // .addIndicators({ name: 'text1' })
+      .addIndicators({ name: 'text1' })
       .addTo(this.controller);
 
     const scene2 = new ScrollMagic.Scene({
@@ -159,7 +162,7 @@ class ScrollAtCertainPoint {
       duration: '60%'
     })
       .setTween(tl2)
-      // .addIndicators({ name: 'text2' })
+      .addIndicators({ name: 'text2' })
       .addTo(this.controller);
 
   }
@@ -174,22 +177,24 @@ class ScrollAtCertainPoint {
     tl.from('.logo--bigger', .5, { y: -500, opacity: 0 })
 
     if (screenL.matches) {
+      // at least 1200px
       const scene = new ScrollMagic.Scene({
         triggerElement: '.trigger--contact',
         triggerHook: 'onLeave',
         duration: '35%'
       })
         .setTween(tl)
-        // .addIndicators({ name: 'contact' })
+        .addIndicators({ name: 'contact' })
         .addTo(this.controller);
     } else {
+      // less than 1200px
       const scene = new ScrollMagic.Scene({
         triggerElement: '.trigger--contact',
         triggerHook: 'onLeave',
         duration: '35%'
       })
         .setTween(tl)
-        // .addIndicators({ name: 'contact' })
+        .addIndicators({ name: 'contact' })
         .addTo(this.controller);
     }
   }

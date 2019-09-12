@@ -14,13 +14,10 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: $mainBlack
-      url('https://raw.githubusercontent.com/jee3153/DeveloperPortfolio/master/dist/src/images/glitch.gif') no-repeat
-      center center fixed;
-    background-size: cover;
-    @mixin atLarge {
+    background: $mainBlack;
+    @mixin atSmall {
       background: $mainBlack
-        url('https://raw.githubusercontent.com/jee3153/DeveloperPortfolio/master/dist/src/images/glitch.gif') center
+        url('https://raw.githubusercontent.com/jee3153/DeveloperPortfolio/master/dist/src/images/glitchtv.gif') center
         center fixed;
       background-size: auto;
     }
@@ -68,20 +65,13 @@
   &__scroll-text {
     font-family: 'Roboto mono', monospace;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
 
     animation: flicker 2s infinite;
     position: absolute;
-    width: 100%;
-    top: 83%;
-    left: 69%;
+    width: 211px;
+    top: 80%;
+    left: 50%;
     transform: translateX(-50%);
-    @mixin atSmall {
-      left: 76%;
-    }
-    @mixin atTablet {
-      top: 95%;
-      left: 104%;
-    }
   }
 }

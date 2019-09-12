@@ -13,12 +13,12 @@
     top: 60%;
   }
   &--appear {
-    top: 330%;
+    top: 290%;
     @mixin atSmall {
-      top: 300%;
+      top: 250%;
     }
     @mixin atTablet {
-      top: 320%;
+      top: 280%;
     }
     @mixin atLarge {
       top: 300%;
@@ -43,7 +43,8 @@
     }
   }
   &--contact {
-    top: 473%;
+    /* top: 473%; */
+
     @mixin atSmall {
       top: 449%;
     }
