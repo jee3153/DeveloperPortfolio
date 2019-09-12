@@ -55,7 +55,7 @@ class ScrollAtCertainPoint {
       })
         .setPin('.trigger--appear')
         .setTween(tl)
-        .addIndicators({ name: 'appear' })
+        // .addIndicators({ name: 'appear' })
         .addTo(this.controller);
 
     } else {
@@ -84,7 +84,7 @@ class ScrollAtCertainPoint {
       })
         .setPin('.trigger--appear')
         .setTween(tl)
-        .addIndicators({ name: 'appear' })
+        // .addIndicators({ name: 'appear' })
         .addTo(this.controller);
     }
 
@@ -153,7 +153,7 @@ class ScrollAtCertainPoint {
       duration: '100%'
     })
       .setTween(tl)
-      .addIndicators({ name: 'text1' })
+      // .addIndicators({ name: 'text1' })
       .addTo(this.controller);
 
     const scene2 = new ScrollMagic.Scene({
@@ -162,7 +162,7 @@ class ScrollAtCertainPoint {
       duration: '60%'
     })
       .setTween(tl2)
-      .addIndicators({ name: 'text2' })
+      // .addIndicators({ name: 'text2' })
       .addTo(this.controller);
 
   }
@@ -184,7 +184,7 @@ class ScrollAtCertainPoint {
         duration: '35%'
       })
         .setTween(tl)
-        .addIndicators({ name: 'contact' })
+        // .addIndicators({ name: 'contact' })
         .addTo(this.controller);
     } else {
       // less than 1200px
@@ -194,7 +194,7 @@ class ScrollAtCertainPoint {
         duration: '35%'
       })
         .setTween(tl)
-        .addIndicators({ name: 'contact' })
+        // .addIndicators({ name: 'contact' })
         .addTo(this.controller);
     }
   }

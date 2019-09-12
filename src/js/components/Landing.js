@@ -16,8 +16,8 @@ class Landing {
     })
     window.addEventListener('resize', () => {
       main.style.height = `${heightChild}px`;
-      console.log(heightChild)
-      console.log('resized')
+      // console.log(heightChild)
+      // console.log('resized')
     })
   }
 
