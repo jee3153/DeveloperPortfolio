@@ -15,7 +15,7 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "postcss": "^7.0.17",
+    "postcss": "^8.2.10",
     "postcss-calc": "^7.0.1",
     "postcss-define-function": "^0.1.2",
     "postcss-hexrgba": "^1.0.2",
